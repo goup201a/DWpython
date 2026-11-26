@@ -11,7 +11,7 @@ button = Pin(0, Pin.IN, Pin.PULL_UP)
 pressed = False
 
 while True:
-    if button.value() == 0: #눌리지 않을때
+    if button.value() == 0:
         if not pressed:
             index = index + 1
             if index > 4:
